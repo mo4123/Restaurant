@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Spice Garden is a demo Indian restaurant website featuring fresh food and warm hospitality.">
+  <title>Spice Garden | Indian Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Spice<span>Garden</span></a>
+      <button class="menu-toggle" type="button"
+        aria-label="Open navigation"
+        aria-expanded="false" aria-controls="nav-links">
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">WELCOME TO SPICE GARDEN</p>
+        <h1>Authentic Flavours.<br><span>Unforgettable Moments.</span></h1>
+        <p>Discover delicious Indian cuisine prepared with care,
+           tradition and fresh ingredients.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Menu</a>
+          <a class="btn btn-outline" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="menu">
+      <p class="eyebrow">OUR SPECIALITIES</p>
+      <h2>Popular Dishes</h2>
+      <p class="section-intro">Explore a selection of our favourites.</p>
+
+      <div class="menu-grid">
+        <article class="food-card">
+          <div class="food-art">🍛</div>
+          <div class="food-info">
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant rice with aromatic spices.</p>
+            <strong>₹220</strong>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-art">🥘</div>
+          <div class="food-info">
+            <h3>Paneer Butter Masala</h3>
+            <p>Soft paneer in creamy tomato gravy.</p>
+            <strong>₹180</strong>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-art">🥞</div>
+          <div class="food-info">
+            <h3>Masala Dosa</h3>
+            <p>Crispy dosa with spiced potato filling.</p>
+            <strong>₹100</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-content">
+        <div>
+          <p class="eyebrow">OUR STORY</p>
+          <h2>Food Made With Passion</h2>
+          <p>At Spice Garden, we celebrate the richness of Indian
+             cooking through fresh ingredients and traditional recipes.</p>
+          <p>Whether it's a family meal or a casual gathering,
+             we aim to make every visit memorable.</p>
+          <a class="btn btn-primary" href="#contact">Get in Touch</a>
+        </div>
+        <div class="about-art" role="img"
+             aria-label="Illustration of Indian cuisine">🍽️</div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <p class="eyebrow">VISIT US</p>
+      <h2>Contact & Opening Hours</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Location</h3>
+          <p>Demo Restaurant, Tamil Nadu, India</p>
+          <p>Replace with the real business address.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Opening Hours</h3>
+          <p>Monday – Sunday</p>
+          <p>11:00 AM – 10:00 PM</p>
+          <p>Sample timings only</p>
+        </div>
+        <div class="contact-card">
+          <h3>Enquiries</h3>
+          <p>Ready to discuss an order?</p>
+          <button class="btn btn-primary" id="whatsapp-btn"
+                  type="button">WhatsApp Us</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Spice Garden.
+         Fictional portfolio demonstration.</p>
+    </div>
+  </footer>
+</body>
+</html>
