@@ -6,7 +6,7 @@
 // Enter a real number with country code, digits only.
 // Example format: 91 followed by a valid Indian mobile number.
 // Leave empty to disable WhatsApp in the demo.
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "6374871822";
 
 // Get your endpoint from https://formspree.io/
 // Example format: https://formspree.io/f/yourFormId
