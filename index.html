@@ -3,25 +3,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Spice Garden is a demo Indian restaurant website featuring fresh food and warm hospitality.">
-  <title>Spice Garden | Indian Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spice Garden restaurant portfolio demo featuring Indian cuisine, a sample menu, and contact information.">
+  <title>Spice Garden | Authentic Indian Cuisine</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
-      <a class="logo" href="#home">Spice<span>Garden</span></a>
+      <a href="#home" class="logo">Spice<span>Garden</span></a>
+
       <button class="menu-toggle" type="button"
         aria-label="Open navigation"
-        aria-expanded="false" aria-controls="nav-links">
+        aria-expanded="false"
+        aria-controls="nav-links">
         ☰
       </button>
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -30,45 +33,69 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-content">
-        <p class="eyebrow">WELCOME TO SPICE GARDEN</p>
-        <h1>Authentic Flavours.<br><span>Unforgettable Moments.</span></h1>
-        <p>Discover delicious Indian cuisine prepared with care,
-           tradition and fresh ingredients.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#menu">Explore Menu</a>
-          <a class="btn btn-outline" href="#contact">Contact Us</a>
+        <p class="eyebrow">Welcome to Spice Garden</p>
+        <h1>Where Every Bite Tells a Story</h1>
+        <p>
+          Discover the rich flavors of Indian cuisine,
+          prepared with fresh ingredients and traditional spices.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
         </div>
       </div>
     </section>
 
     <section class="section container" id="menu">
-      <p class="eyebrow">OUR SPECIALITIES</p>
-      <h2>Popular Dishes</h2>
-      <p class="section-intro">Explore a selection of our favourites.</p>
+      <div class="section-heading">
+        <p class="eyebrow">Our Specialties</p>
+        <h2>Popular Dishes</h2>
+        <p>Explore some of our delicious signature dishes.</p>
+      </div>
 
       <div class="menu-grid">
-        <article class="food-card">
-          <div class="food-art">🍛</div>
-          <div class="food-info">
+        <article class="dish-card">
+          <img src="images/biryani.webp"
+            alt="Chicken biryani served with aromatic rice"
+            class="dish-image" loading="lazy"
+            width="600" height="400">
+          <div class="dish-content">
             <h3>Chicken Biryani</h3>
-            <p>Fragrant rice with aromatic spices.</p>
-            <strong>₹220</strong>
+            <p>Aromatic basmati rice with tender chicken and spices.</p>
+            <div class="dish-bottom">
+              <strong>₹220</strong>
+              <a href="#contact">Enquire</a>
+            </div>
           </div>
         </article>
-        <article class="food-card">
-          <div class="food-art">🥘</div>
-          <div class="food-info">
+
+        <article class="dish-card">
+          <img src="images/paneer.webp"
+            alt="Paneer butter masala curry"
+            class="dish-image" loading="lazy"
+            width="600" height="400">
+          <div class="dish-content">
             <h3>Paneer Butter Masala</h3>
-            <p>Soft paneer in creamy tomato gravy.</p>
-            <strong>₹180</strong>
+            <p>Soft paneer cubes in a rich, creamy tomato gravy.</p>
+            <div class="dish-bottom">
+              <strong>₹190</strong>
+              <a href="#contact">Enquire</a>
+            </div>
           </div>
         </article>
-        <article class="food-card">
-          <div class="food-art">🥞</div>
-          <div class="food-info">
-            <h3>Masala Dosa</h3>
-            <p>Crispy dosa with spiced potato filling.</p>
-            <strong>₹100</strong>
+
+        <article class="dish-card">
+          <img src="images/meals.webp"
+            alt="Traditional South Indian vegetarian meal"
+            class="dish-image" loading="lazy"
+            width="600" height="400">
+          <div class="dish-content">
+            <h3>South Indian Meals</h3>
+            <p>Authentic traditional meals with delicious side dishes.</p>
+            <div class="dish-bottom">
+              <strong>₹150</strong>
+              <a href="#contact">Enquire</a>
+            </div>
           </div>
         </article>
       </div>
@@ -76,49 +103,77 @@
 
     <section class="section about-section" id="about">
       <div class="container about-content">
-        <div>
-          <p class="eyebrow">OUR STORY</p>
-          <h2>Food Made With Passion</h2>
-          <p>At Spice Garden, we celebrate the richness of Indian
-             cooking through fresh ingredients and traditional recipes.</p>
-          <p>Whether it's a family meal or a casual gathering,
-             we aim to make every visit memorable.</p>
-          <a class="btn btn-primary" href="#contact">Get in Touch</a>
-        </div>
-        <div class="about-art" role="img"
-             aria-label="Illustration of Indian cuisine">🍽️</div>
+        <p class="eyebrow">Our Story</p>
+        <h2>Authentic Taste, Modern Experience</h2>
+        <p>
+          Spice Garden is a fictional restaurant created as a
+          website development portfolio project. This demo
+          showcases responsive design, restaurant menus,
+          and customer enquiry features.
+        </p>
+        <p>
+          Every dish and price shown here is sample content
+          for demonstration purposes.
+        </p>
       </div>
     </section>
 
     <section class="section container" id="contact">
-      <p class="eyebrow">VISIT US</p>
-      <h2>Contact & Opening Hours</h2>
+      <div class="section-heading">
+        <p class="eyebrow">Contact Us</p>
+        <h2>Get in Touch</h2>
+        <p>Have a question? Send us a message.</p>
+      </div>
+
       <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Location</h3>
-          <p>Demo Restaurant, Tamil Nadu, India</p>
-          <p>Replace with the real business address.</p>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Location:</strong> Tamil Nadu, India (Demo)</p>
+          <p><strong>Hours:</strong> 11:00 AM – 10:00 PM (Sample)</p>
+          <p><strong>Email:</strong> demo@example.com (Placeholder)</p>
+
+          <a href="#" id="whatsapp-link"
+             class="btn whatsapp-btn" aria-disabled="true">
+            WhatsApp Enquiry
+          </a>
+          <p class="small-note">
+            WhatsApp is disabled until a valid business number
+            is configured in script.js.
+          </p>
         </div>
-        <div class="contact-card">
-          <h3>Opening Hours</h3>
-          <p>Monday – Sunday</p>
-          <p>11:00 AM – 10:00 PM</p>
-          <p>Sample timings only</p>
-        </div>
-        <div class="contact-card">
-          <h3>Enquiries</h3>
-          <p>Ready to discuss an order?</p>
-          <button class="btn btn-primary" id="whatsapp-btn"
-                  type="button">WhatsApp Us</button>
-        </div>
+
+        <form class="contact-form"
+          id="contact-form"
+          action=""
+          method="POST">
+
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name"
+            autocomplete="name" required maxlength="100">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email"
+            autocomplete="email" required maxlength="254">
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"
+            rows="5" required maxlength="2000"></textarea>
+
+          <button type="submit" class="btn">
+            Send Enquiry
+          </button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
+      <p class="footer-logo">Spice<span>Garden</span></p>
+      <p>Fresh Flavors. Memorable Moments.</p>
       <p>© <span id="year"></span> Spice Garden.
-         Fictional portfolio demonstration.</p>
+        Portfolio demonstration only.</p>
     </div>
   </footer>
 </body>
